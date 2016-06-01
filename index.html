@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion Final</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/act3.jpg','imagenes/act2.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+	 <h1>Carreras las cuales me gustaria estudir</h1>
+   </div>
+     <!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="visor/data1/images/opc2.jpg" alt="opc2" title="opc2" id="wows1_0"/></li>
+<li><img src="visor/data1/images/opc3.jpg" alt="opc3" title="opc3" id="wows1_1"/></li>
+<li><img src="visor/data1/images/opc6.jpg" alt="opc6" title="opc6" id="wows1_2"/></li>
+<li><img src="visor/data1/images/opc4.png" alt="opc4" title="opc4" id="wows1_3"/></li>
+<li><img src="visor/data1/images/opc5.jpg" alt="opc5" title="opc5" id="wows1_4"/></li>
+<li><img src="visor/data1/images/opc1.jpg" alt="opc1" title="opc1" id="wows1_5"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="opc2"><img src="visor/data1/tooltips/opc2.jpg" alt="opc2"/>1</a>
+<a href="#" title="opc3"><img src="visor/data1/tooltips/opc3.jpg" alt="opc3"/>2</a>
+<a href="#" title="opc6"><img src="visor/data1/tooltips/opc6.jpg" alt="opc6"/>3</a>
+<a href="#" title="opc4"><img src="visor/data1/tooltips/opc4.png" alt="opc4"/>4</a>
+<a href="#" title="opc5"><img src="visor/data1/tooltips/opc5.jpg" alt="opc5"/>5</a>
+<a href="#" title="opc1"><img src="visor/data1/tooltips/opc1.jpg" alt="opc1"/>6</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Slideshow HTML5</a> by WOWSlider.com v4.8</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="visor/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="visor/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->    
+<div>
+	<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Primera opcion</h2>
+    <p>Se muestra informaion de la carrera</p>
+    </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Segunda opcion</h2>
+    <p>Se muestra informacion sobre la carrear</p>
+    </a>
+   </li>
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Tercera opcion</h2>
+  <p>Se muestra informacion sobre la carrera</p>
+  </a>
+  </li>
+ </ul>
+</div>
+<div data-role="main" class="ui-content">
+		<div data-role="collapsible" data-content-theme="false">
+         <h1>Datos del Alumno</h1>
+          <div>
+          <p>CBTis 16</p>
+          <p>Jean Karlo Jimenez Contreras</p>
+          <p>4to "H"</p>
+          <p>NL:14</p>
+          </div>
+         </div>
+         </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+	<div>
+    	<img src="res/android/mdpi.png" width="80" height="73">
+     </div>
+     <div>
+     	<h4>Aplicación final</h4>
+        <h4>Jean Karlo Jimenez Contreras</h4>
+       </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+	  <h1>Aministracion de empresas turisticas</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+   </div>
+   <div>
+		<div data-role="collapsible" data-content-theme="false">
+          <h1>En donde se encuentra la carrera</h1>
+    <h2>Universidad BUAP</h2>
+          <div>
+          <p><ul><li>Atlixco</li>
+<li>Chignahuapan</li>
+<li>Puebla</li></ul></p>
+          </div>
+        <div><center><img src="imagenes/LAET1.jpg" width="250" height="157"></center></div>
+        </div>
+        </div>        
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Perfil de Ingreso</h1>
+    <h2>Universidad BUAP</h2>
+          <div>
+          <p>El aspirante a ingresar al Plan de Estudios de Administración Turística deberá tener las siguientes características:</p>
+          <ul>
+<li>Conocimientos: Generales de las áreas administrativas y sociales, de las culturas  regionales,  nacionales e internacionales, del entorno económico, político y social del país, así como conocimientos generales de historia, cultura, tradiciones y atractivos turísticos.</li>
+<li>Habilidades: Interpretar los diversos fenómenos culturales, económicos, políticos y sociales; interrelacionarse con otras personas y grupos, comunicarse de manera oral y escrita, hablar en público, analizar y sintetizar fenómenos económicos, políticos y/o sociales de manera ordenada y sistemática, la solución de problemas complejos, adaptarse a cambios de residencia, el manejo de idiomas, vincular e interpretar los diversos fenómenos culturales, económicos, políticos y sociales y asumir liderazgo en grupos.</li>
+<li>Actitudes y Valores: Servicio a la comunidad con capacidad para interesarse en diversos problemas económicos y sociales, superación permanente, apertura a nuevos conocimientos debido a la naturaleza cambiante del entorno, poseer actitudes de trabajo en equipo, comprensión ante las diferentes culturas, tener una conciencia de respeto y protección al patrimonio natural y cultural y poseer una actitud ética y de respeto ante las diversas formas de pensar y de actuar de las diferentes conductas</li></ul>
+          </div>
+        <div><center><img src="imagenes/LAET2.jpg" width="250" height="157"></center></div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Campo de Trabajo</h1>
+    <h2>Universidad BUAP</h2>
+          <div>
+          <p>En la licenciatura en Administración Turística el egresado podrá incorporarse en los diferentes ámbitos del sector turístico: complejos turísticos, industria hotelera, bares, restaurantes, agencias de viajes, transportadoras turísticas, guía de turistas, animador turístico, líneas aéreas, centros de convenciones; en la Administración Pública, en sus tres niveles de gobierno por ejemplo, la Secretaría de Turismo, de Cultura, Relaciones Exteriores y  Comercio, entre otras.</p>
+          </div>
+        <div><center><img src="imagenes/LAET3.jpg" width="250" height="157"></center></div>
+        </div>
+          <div><center><a href="http://www.buap.mx/portal_pprd/wb/EDUCATIVA/administracion_turistica">Universidad BUAP</a></center></div>
+ <div data-role="footer" data-theme="a" data-position="fixed" align="center">
+ <div><img src="res/android/mdpi2.jpg" width="80" height="69"></div>
+ <div>
+ 	<h4>Administracion de empresas turisticas</h4>
+    <h4>JKJC</h4>
+   </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>Lic.En Actuacion dreamatica y teatro</h1>
+       </div>
+       <div data-role="content" align="center">
+       </div>
+       <div>
+		<div data-role="collapsible" data-content-theme="false">
+          <h1>En donde se encuentra la carrera</h1>
+          <div>
+          <p><ul><li>UNAM</li>
+<li>CEA Televisa</li>
+<li>CEFAT Azteca</li></ul></p>
+          </div>
+        <div><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/act3.jpg',1)"><img src="imagenes/act1.jpg" width="415" height="150" id="Image9"></a>
+          </center></div>
+        </div>
+        </div>        
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Perfil de Ingreso</h1>
+          <div>
+          <p>La carrera es de ingreso con prerrequisitos, éstos consisten en aprobar el proceso de selección (con duración de tres semanas) que realiza el CUT, y en cursar y acreditar un Ciclo propedéutico con duración de un año, que se desarrolla en la misma entidad académica.
+Los requisitos específicos para el proceso de selección, se refieren a la evaluación de las habilidades artísticas de los aspirantes, la cual debe ser acreditada antes de la presentación del examen general de admisión de la UNAM.
+Para el proceso se atenderá a un máximo de 300 aspirantes, de los cuales sólo serán aceptados, entre 16 a 20 alumnos aproximadamente. Los que no sean seleccionados, no podrán estudiar esta carrera.</p>
+          </div>
+        <div><center><img src="imagenes/act3.jpg" width="250" height="157"></center></div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Campo de Trabajo</h1>
+          <div>
+          <p>El campo de trabajo del actor es diverso, y depende en gran medida de lo que él mismo genere con sus propuestas estéticas y organizativas. Podrá participar en la creación de compañías o en proyectos que le permitan generar fuentes de empleo.
+Los egresados de esta carrera pueden colaborar en:<ul>
+<li> Instituciones públicas y privadas de enseñanza sobre el teatro y la actuación.</li>
+<li> Museos, centros culturales y organizaciones dedicadas a la difusión de la cultura.</li>
+<li> Entidades privadas de divulgación cultural.</li>
+<li> Compañías de teatro, nacionales e internacionales.</li>
+<li> Actividades relacionadas con la gestión teatral.</li>></ul></p>
+          </div>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/act2.jpg',1)"><img src="imagenes/act1.jpg" width="415" height="150" id="Image"></a> </div>
+          <div><center><a href="http://www2.esmas.com/cea/perfil-de-aspirantes/">CEA Televisa</a></center></div>
+          <div><center><a href="http://oferta.unam.mx/carreras/103/teatro-y-actuacion">Actuacion UNAM</a></center></div>
+          <div><center><a href="http://www.cefat.mx/">Cefat Tv Azteca</a></center></div>
+ <div data-role="footer" data-theme="a" data-position="fixed" align="center">
+ <div><img src="res/android/mdpi3.png" width="80" height="69"></div>
+ <div>
+ 	<h4>Actuacion dramatica y teatro</h4>
+    <h4>JKJC</h4>
+   </div>
+ </div>
+</div>
+
+  
+  <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>Lic. En Relaciones Internacionales</h1>
+       </div>
+       <div data-role="content" align="center">
+         </div>
+   <div>
+		<div data-role="collapsible" data-content-theme="false">
+          <h1>En donde se encuentra la carrera</h1>
+    <h2>Universidad BUAP</h2>
+          <div>
+          <p><ul>
+<li>Puebla</li></ul></p>
+          </div>
+        <div><center><img src="imagenes/rel1.jpg" width="250" height="157"></center></div>
+        </div>
+        </div>        
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Perfil de Ingreso</h1>
+    <h2>Universidad BUAP</h2>
+          <div>
+          <p>Los aspirantes a cursar la Licenciatura en Relaciones Internacionales deberán cumplir con el siguiente perfil: Datos generales de Historia de México, Historia Universal, Ciencias Sociales y Geografía, que le permiten entender la dinámica y complejidad de las sociedades contemporáneas mediante las metodologías básicas de estudio e investigación así como relacionar aspectos políticos, históricos, económicos sobre la realidad mundial compleja, multidimensional e interconectada.
+
+Capacidad de análisis y síntesis, para utilizar los medios y herramientas de información y comunicación electrónicas de las nuevas sociedades del conocimiento.
+
+Interés en los procesos sociales, económicos, jurídicos y políticos que incluyan a los actores nacionales, regionales e internacionales, disposición para aprender lenguas extranjeras y manifestar tolerancia, respeto, responsabilidad y solidaridad hacia los demás.</p>
+          
+          </div>
+        <div><center><img src="imagenes/rel2.jpg" width="250" height="157"></center></div>
+        </div>
+        <div data-role="collapsible" data-content-theme="false">
+          <h1>Campo de Trabajo</h1>
+    <h2>Universidad BUAP</h2>
+          <div>
+          <p>Los alumnos de la carrera de Relaciones Internacionales podrán desempeñarse en:
+
+Sector Público. Comprendido en éste la Secretaría de Relaciones Exteriores y otras dependencias relacionadas con asuntos externos y oficinas de enlace gubernamental en los Estados y Municipios; asimismo en áreas de docencia y/o investigación y comunicación.
+
+Sector Privado. Comprendido en éste Organismos No Gubernamentales, Departamentos de vinculación internacional, empresas transnacionales; asimismo en áreas de docencia, investigación y comunicación.
+
+De forma independiente en asesoría, consultoría y gestión de asuntos internacionales.</p>
+          </div>
+        <div><center><img src="imagenes/rel3.jpg" width="250" height="157"></center></div>
+        </div>
+          <div><center><a href="http://cmas.siu.buap.mx/portal_pprd/wb/EDUCATIVA/licenciatura_en_relaciones_internacionales_1">Universidad BUAP</a></center></div>
+          <div><center><a href="http://oferta.unam.mx/carreras/12/relaciones-internacionales">Otra opcion  UNAM</a></center></div>
+          <div data-role="footer" data-theme="a" data-position="fixed" align="center">
+          <div><img src="res/android/mdpi2.jpg" width="80" height="69"></div>
+ <div>
+ 	<h4>Relaciones Internacionales</h4>
+    <h4>JKJC</h4>
+   </div>
+ </div>
+</div>
+</body>
+</html>
